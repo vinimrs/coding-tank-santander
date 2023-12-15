@@ -46,6 +46,29 @@ public class Questao3 {
       asteriscos += 2;
     }
 
+    // ajustando asteriscos para o topo do triângulo
+    asteriscos -= 2;
+
+    while (asteriscos >= 1) {
+
+      int espacos = quantidade - asteriscos;
+
+      for (int i = 1; i <= espacos/2; i++) {
+        System.out.print(" ");
+      }
+
+      for (int i = 1; i <= asteriscos; i++) {
+        System.out.print("*");
+      }
+
+      for (int i = 1; i <= espacos/2; i++) {
+        System.out.print(" ");
+      }
+
+      System.out.println();
+      asteriscos -= 2;
+    }
+
     scanner.close();
   }
 
